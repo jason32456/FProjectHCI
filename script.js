@@ -90,3 +90,17 @@ function clearErrors() {
         element.textContent = '';
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slider .dish-section');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        slides[currentIndex].scrollIntoView({ behavior: 'smooth' });
+
+        currentIndex = (currentIndex + 1) % slides.length;
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+});
