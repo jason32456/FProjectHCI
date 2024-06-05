@@ -98,9 +98,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showNextSlide() {
         slides[currentIndex].scrollIntoView({ behavior: 'smooth' });
-
         currentIndex = (currentIndex + 1) % slides.length;
     }
 
+    // Set an interval to automatically move to the next slide every 3 seconds
     setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+    // Modify the initial page load behavior
+    const initialSlide = document.getElementById('slide-1');
+    if (initialSlide) {
+        // This ensures that the initial slide is visible without scrolling
+        initialSlide.scrollIntoView({ behavior: 'auto' });
+    }
 });
