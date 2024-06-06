@@ -787,3 +787,82 @@ footer {
     width: 100px;
     height: auto;
 }
+
+#gap{
+    height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+
+    .product-container {
+        padding: 0 20px;
+    }
+
+    .slider-nav {
+        bottom: 0.5rem;
+    }
+
+    .slider-nav a {
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+
+    .slider-wrapper {
+        height: 50vh;
+    }
+
+    .slider {
+        height: 100%;
+    }
+
+    .slider .dish-section {
+        flex: 1 0 100%;
+    }
+
+    .dish-wrapper {
+        flex-direction: column;
+    }
+
+    .dish-image-container {
+        margin-right: 0;
+    }
+
+    .dish-details {
+        padding-right: 0;
+    }
+
+    .dish-photo {
+        width: 100%;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .image-gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
+
+    .about-content, .services-content, .testimonial-content {
+        padding: 10px;
+    }
+
+    .about-content p, .services-content ul, .testimonial-content p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+}
