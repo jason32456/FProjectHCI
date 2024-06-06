@@ -714,6 +714,60 @@ footer {
     margin: 0;
 }
 
+#about-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFF4E6;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gallery-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #FF6347;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content, .services-content, .testimonial-content {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p, .services-content ul, .testimonial-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.services-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-content ul li {
+    background: url('img/checkmark.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
 footer {
     height: 20rem;
     padding-top: 100px;
